@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Easy Unsubscriber",
+  "version": "1.0",
+  "description": "Add quick unsubscribe buttons to YouTube channels page",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [{
+    "matches": ["https://www.youtube.com/feed/channels"],
+    "js": ["content.js"],
+    "css": ["styles.css"]
+  }]
+}
